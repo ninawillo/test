@@ -20,7 +20,7 @@ async function screenshot(url) {
   });
   const screenData = await page.screenshot({encoding: 'binary', type: 'jpeg', quality: 100});
   if (!!screenData) {
-    fs.writeFileSync('screenshots/screenshot.jpg', screenData);
+    fs.writeFileSync('screenshots/screenshotX.jpg', screenData);
   } else {
     throw Error('Unable to take screenshot');
   }
