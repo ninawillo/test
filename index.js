@@ -1,7 +1,7 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 
-screenshot('https://example.com').then(() => console.log('screenshot saved'));
+screenshot('https://google.com').then(() => console.log('screenshot saved'));
 
 async function screenshot(url) {
   const browser = await puppeteer.launch({
